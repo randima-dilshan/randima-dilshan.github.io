@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">  
+    <title>SerpentSphere </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/icon/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/icon/logo.png" alt="Icon">
+            <h1 class="m-0 text-primary">SerpentSphere</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Project Scope</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="#literature" class="dropdown-item">Literature Survey</a>
+                        <a href="#gap" class="dropdown-item">Research Gap</a>
+                        <a href="#research" class="dropdown-item">Research Problem and Solutions</a>
+                        <a href="#objectives" class="dropdown-item">Research Objectives</a>
+                        <a href="#methodology" class="dropdown-item">Methodology</a>
+                    </div>
+                </div>
+                <a href="#milestones" class="nav-item nav-link">Milestones</a>
+                <a href="#downloads" class="nav-item nav-link">downloads</a>
+                <a href="#aboutus" class="nav-item nav-link">About Us</a>
+                <a href="#contact" class="nav-item nav-link">Contact Us</a>
+            </div>
+             </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-dark p-0 mb-5">
+        <div class="row g-0 flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 p-0 wow fadeIn" data-wow-delay="0.1s">
+                <div class="header-bg h-100 d-flex flex-column justify-content-center p-5">
+                    <h1 class="display-4 text-light mb-5">"Master the Art of Snake Handling in Virtual Reality."</h1>
+                    <div class="d-flex align-items-center pt-4 animated slideInDown">
+                        <!-- <a href="" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5">Read More</a> -->
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/ScAmZvkdoTg" data-bs-target="#videoModal">
+                            
+                            <span></span>
+                        </button>
+                        <h6 class="text-white m-0 ms-4 d-none d-sm-block">Watch Video</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="owl-carousel header-carousel">
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                    </div>
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                    </div>
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="">
+                    </div>
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+     <section id="literature" class="section">
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p><span class="text-primary me-2">#</span>Project Scope</p>
+                    <h1 class="display-5 mb-4">Literature Survey</h1>
+                    <p class="mb-4">Snakebite envenomation poses a major health risk in tropical regions like Sri Lanka, particularly in rural communities with limited medical access and awareness. Traditional training methods, such as books and lectures, often fall short in preparing individuals for real-life emergencies due to their lack of interactivity and realism. Virtual Reality (VR) offers a promising alternative by providing immersive, hands-on training in safe environments, which enhances knowledge retention and decision-making in high-pressure situations.
+                    </p>
+                    <p class="mb-4"> With the integration of AI and IoT, VR systems can deliver adaptive learning experiences and realistic simulations, such as visualizing venom spread in the body, making complex biological processes more understandable. Based on these innovations, SerpentSphere was created as a VR training platform focused on snake handling, species identification, and first aid response. It bridges the gap between theory and practice, supporting ethical wildlife engagement and empowering users to respond confidently to snakebite incidents. </p>
+                    <p style="font-size: 0.85em;">
+                    [1] World Health Organization, Snakebite Envenoming: A Strategy for Prevention and Control, Geneva: WHO, 2023.
+                    <br> [2] M. Zahabi, S. Kaber, and C. Swangnetr, “Usability and cognitive load of training in virtual environments: A review,” Applied Ergonomics, vol. 65, pp. 398–409, 2017.
+                    <br>   [3] L. Freina and M. Ott, “A literature review on immersive virtual reality in education,” in Proc. eLearning and Software for Education (eLSE), Bucharest, 2015, pp. 133–141.
+                    <br>[4] X. Sun and Y. Zhang, “IoT-integrated virtual reality systems for surgical training,” International Journal of Simulation and Process Modelling, vol. 16, no. 2, pp. 123–135, 2021.
+                    <br>[5] D. A. Norman, The Design of Everyday Things, Revised and Expanded Edition, Cambridge, MA: MIT Press, 2013.
+                </p>
+                    
+                    
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="img-border">
+                        <img class="img-fluid" src="img/about.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-xxl bg-primary facts my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
+                    <img src="img/icon/total.png" alt="Logo" style="width: 48px; margin-bottom: 1rem;" />
+                    <h1 class="text-white mb-2" data-toggle="counter-up">107</h1>
+                    <p class="text-white mb-0">Total Snakes</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                    <img src="img/icon/venom.png" alt="Logo" style="width: 48px; margin-bottom: 1rem;" />
+                    <h1 class="text-white mb-2" data-toggle="counter-up">15</h1>
+                    <p class="text-white mb-0">Venomous Snakes</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                    <img src="img/icon/mid.png" alt="Logo" style="width: 48px; margin-bottom: 1rem;" />
+                    <h1 class="text-white mb-2" data-toggle="counter-up">20</h1>
+                    <p class="text-white mb-0">Mid Venomous Snake</p>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                   <img src="img/icon/low.png" alt="Logo" style="width: 48px; margin-bottom: 1rem;" />
+                    <h1 class="text-white mb-2" data-toggle="counter-up">70</h1>
+                    <p class="text-white mb-0">Non Venomous Snake</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+     <section id="gap" class="section">
+    
+        <div class="container">
+            
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <p><span class="text-primary me-2">#</span>Project Scope</p>
+                    <h1 class="display-5 mb-4">Research Gap</h1>
+                    
+                    <div class="container training-section">
+  <div class="row">
+
+    <!-- Column 1 -->
+    <div class="text-center col-md-4">
+      <div class="training-card">
+        <img src="img/icon/Snake handlin.png" alt="Logo" style="width: 48px; margin-bottom: 1rem;" />
+        <h5>Snake Handling Techniques</h5>
+        <p>Traditional training involves live snakes, creating safety risks. There's a need for safe, hands-on tool-based training with hooks and tongs.</p>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="text-center col-md-4">
+      <div class="training-card">
+        <img src="img/icon/snake identification.png" alt="Logo" style="width: 48px; margin-bottom: 1rem;" />
+        <h5>Snake Identification & Venom Extraction</h5>
+        <p>Misidentification of venomous snakes is common. Training should include interactive features for identification and safe venom extraction practice.</p>
+      </div>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="text-center col-md-4">
+      <div class="training-card">
+        <img src="img/icon/medicin.png" alt="Logo" style="width: 48px; margin-bottom: 1rem;" />
+        <h5>Effects of Snake Venom & First Aid</h5>
+        <p>Different venom types affect the body differently. Visual simulations of venom progression and emergency first aid training are essential.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+                    
+ </div>
+
+    </div>
+
+    </section>
+
+
+    
+
+
+
+
+
+    <section id="research" class="section py-5" style="background-color: #f8f9fa;">
+  <div class="container wow fadeInUp">
+    <!-- Section Title -->
+
+    <div class=" wow fadeInUp" data-wow-delay="0.1s">
+                    <p><span class="text-primary me-2">#</span>Project Scope</p>
+                    <h1 class="display-5 mb-4">Research Problem & Solution</h1>
+ 
+    <!-- Two-column: Research Problem -->
+    <div class="row align-items-center mb-5">
+      <!-- Left Column: Problem Text -->
+      <div class="col-md-6 wow fadeInUp  data-wow-delay="0.5s">
+        <h4 class="mb-3 text-primary">Research Problem</h4>
+        <p>
+          How can an immersive virtual reality platform be used to effectively train users in snake identification,
+          safe handling, and first-aid response to snakebite incidents in high-risk regions like Sri Lanka?
+        </p>
+        <p>
+          Snakebite envenomation is a life-threatening but often overlooked public health challenge, especially in
+          rural, tropical regions where medical access is limited. Traditional educational methods like textbooks,
+          passive lectures, or live snake demonstrations are either ineffective, unsafe, or inaccessible to those who
+          need them most.
+        </p>
+        <p>
+          A lack of practical training in snake identification, handling, and emergency care leads to increased
+          fatalities and fear-driven actions like snake extermination.
+        </p>
+      </div>
+
+      <!-- Right Column: YouTube Video Embed Placeholder -->
+      <div class="wow fadeInUp col-md-6" data-wow-delay="0.7s">
+        <!-- Replace with actual YouTube embed -->
+<div style="width: 100%; max-width: 500px; height: 280px;">
+  <iframe 
+    width="100%" 
+    height="100%" 
+    src="https://www.youtube.com/embed/ScAmZvkdoTg" 
+    frameborder="0" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+      </div>
+    </div>
+
+    <!-- Proposed Solution Section -->
+    <div class="wow fadeInUp mt-4 data-wow-delay="0.5s">
+      <h4 class="mb-3 text-primary">Proposed Solution</h4>
+      <p>
+        <strong>SerpentSphere</strong> is a Virtual Reality-based training platform designed to provide immersive,
+        hands-on education in venomous snake identification, safe handling techniques using tools, and snakebite
+        first-aid response.
+        By simulating realistic scenarios in a controlled virtual environment, the platform enables users especially
+        those in high-risk and rural areas-to practice critical skills safely, repeatedly, and effectively, without the
+        dangers of real-life exposure.
+    </div>
+  </div> </div>
+</section>
+
+
+
+
+
+
+<section id="objectives" class="py-5">
+  <div class="container">
+    <!-- Heading -->
+    <div class="wow fadeInUp mb-4" data-wow-delay="0.1s">
+      <p><span class="text-primary me-2">#</span>Project Scope</p>
+      <h1 class="display-5 mb-4">Research Objectives</h1>
+    </div>
+
+    <!-- Styled Objectives List -->
+    <div class="row">
+      <div class="wow fadeInUp col-lg-10">
+        <ul class="styled-list">
+          <li><i class="fas fa-check-circle text-success me-2"></i>Teaching tools and techniques for catching and handling venomous snakes.</li>
+          <li><i class="fas fa-check-circle text-success me-2"></i>Identifying various venomous snakes and studying their anatomy and educating venom extraction procedures.</li>
+          <li><i class="fas fa-check-circle text-success me-2"></i>Educate effects of snake bites on human body and teach ways of recovery.</li>
+          <li><i class="fas fa-check-circle text-success me-2"></i>To enhance user learning and engagement through AI integration, enabling real-time assistance, and personalized educational support.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section id="methodology" class="py-5" >
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="wow fadeInUp mb-4" data-wow-delay="0.1s">
+      <p><span class="text-primary me-2">#</span>Project Scope</p>
+      <h1 class="display-5 mb-4">Methodology</h1>
+    </div>
+
+    <!-- Intro Paragraph -->
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="mb-5">
+          The development of SerpentSphere followed a user-centered design approach with expert validation and iterative testing.
+          The system comprises three core VR modules: safe snake handling using virtual tools in a simulated forest environment;
+          snake identification and venom extraction using detailed 3D models and IoT-supported instruments; and venom effect visualization
+          with guided first-aid training. Together, these components provide a realistic, immersive, and risk-free learning experience for
+          effective snakebite awareness and emergency response.
+        </p>
+      </div>
+    </div>
+
+    <!-- Two Diagrams -->
+    <div class="row g-4">
+      <!-- Diagram 1 -->
+      <div class="col-md-6">
+        <img src="img/Picture1.jpg" alt="Methodology Diagram 1" class="img-fluid rounded shadow-sm w-100">
+      </div>
+
+      <!-- Diagram 2 -->
+      <div class="col-md-6">
+        <img src="img/pic2.jpg" alt="Methodology Diagram 2" class="img-fluid rounded shadow-sm w-100">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+   
+
+
+
+    <!-- Service Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="col-lg-6">
+        <h1 class="display-5 mb-0">
+          Key Features of <span class="text-primary">SerpentSphere</span>
+        </h1>
+      </div>
+
+    </div>
+
+    <div class="row gy-5 gx-4">
+      <!-- Feature 1 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+        <img class="img-fluid mb-3" src="img/icon/immersive VR-Based Learning.png" alt="Icon" style="max-width: 80px; height: auto;">
+        <h5 class="mb-3">Immersive VR-Based Learning</h5>
+        <span>Delivers hands-on, safe training using Virtual Reality, simulating real-world scenarios without exposing users to danger.</span>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+        <img class="img-fluid mb-3" src="img/icon/3D.png" alt="Icon" style="max-width: 80px; height: auto;">
+        <h5 class="mb-3">3D Snake Modeling</h5>
+        <span>Includes detailed and anatomically accurate 3D models of snake heads, fangs, skulls, and venom systems for species identification and education.</span>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+        <img class="img-fluid mb-3" src="img/icon/Snake Handling Tool Simulation.png" alt="Icon" style="max-width: 80px; height: auto;">
+        <h5 class="mb-3">Snake Handling Tool Simulation</h5>
+        <span>Trains users to use tools like hooks and tongs in a virtual environment, replicating real-life capture and safety techniques.</span>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+        <img class="img-fluid mb-3" src="img/icon/Venom Extraction Procedure.png" alt="Icon" style="max-width: 80px; height: auto;">
+        <h5 class="mb-3">Venom Extraction Procedure</h5>
+        <span>Features a guided simulation for venom extraction using a 3D-printed or virtual snake head model to practice safe techniques.</span>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+        <img class="img-fluid mb-3" src="img/icon/Ai.png" alt="Icon" style="max-width: 80px; height: auto;">
+        <h5 class="mb-3">AI-Powered Virtual Assistant</h5>
+        <span>Provides real-time feedback, guidance, and educational support through an integrated AI assistant within the VR system.</span>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+        <img class="img-fluid mb-3" src="img/icon/First Aid.png" alt="Icon" style="max-width: 70px; height: auto;">
+        <h5 class="mb-3">First-Aid Simulation Module</h5>
+        <span>Offers step-by-step training in snakebite first-aid response, reinforcing correct techniques and decision-making under pressure.</span>
+      </div>
+
+      <!-- Feature 7 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+        <img class="img-fluid mb-3" src="img/icon/Venom Effect Visualization.png" alt="Icon" style="max-width: 80px; height: auto;">
+        <h5 class="mb-3">Venom Effect Visualization</h5>
+        <span>Simulates the spread and impact of various venom types on the human body through interactive timelines.</span>
+      </div>
+
+      <!-- Feature 8 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+        <img class="img-fluid mb-3" src="img/icon/Realistic Environments and Animations.png" alt="Icon" style="max-width: 80px; height: auto;">
+        <h5 class="mb-3">Realistic Environments and <br>Animations</h5>
+        <span>Immerses users in a jungle-like setting with animated snakes and natural soundscapes to enhance learning engagement and realism.</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Service End -->
+
+
+
+    <!-- Animal Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-end wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <p><span class="text-primary me-2">#</span>Gallery</p>
+                    <h1 class="display-5 mb-0">Engagement Sessions with <span class="text-primary">SerpentSphere
+</span> </h1>
+                </div>
+  
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/a1.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/a1.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        
+                                        <i class="fa fa-map-marker" > Location</i>
+                                        <h5 class="text-white mb-0">Dehiwala Zoological Gardens</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="animal-item" href="img/a5.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/a5.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                       <i class="fa fa-map-marker" > Location</i>
+                                        <h5 class="text-white mb-0">Dehiwala Zoological Gardens</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/a4.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/a4.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <i class="fa fa-map-marker" > Location</i>
+                                        <h5 class="text-white mb-0">Dehiwala Zoological Gardens</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="animal-item" href="img/a3.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/a3.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                      <i class="fa fa-map-marker" > Location</i>
+                                        <h5 class="text-white mb-0">Dehiwala Zoological Gardens</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <a class="animal-item" href="img/a2.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/a2.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                        <i class="fa fa-map-marker" > Location</i>
+                                        <h5 class="text-white mb-0">Dehiwala Zoological Gardens</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12">
+                            <a class="animal-item" href="img/a6.jpg" data-lightbox="animal">
+                                <div class="position-relative">
+                                    <img class="img-fluid" src="img/a6.jpg" alt="">
+                                    <div class="animal-text p-4">
+                                      <i class="fa fa-map-marker" > Location</i>
+                                        <h5 class="text-white mb-0">Dehiwala Zoological Gardens</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Animal End -->
+
+
+
+
+<section id="technologies" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p><span class="text-primary me-2">#</span>Tech Stack</p>
+      <h1 class="display-5">Technologies Used</h1>
+    </div>
+
+    <div class="row justify-content-center g-4">
+      <!-- Technology Items -->
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="img/icon/unity.png" alt="Unity" class="tech-icon mb-2">
+        <h6>Unity</h6>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="img/icon/blender.png" alt="Blender" class="tech-icon mb-2">
+        <h6>Blender</h6>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="img/icon/c.png" alt="C#" class="tech-icon mb-2">
+        <h6>C#</h6>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="img/icon/vs.png" alt="VS Code" class="tech-icon mb-2">
+        <h6>VS Code</h6>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="img/icon/oculus.png" alt="Oculus" class="tech-icon mb-2">
+        <h6>Oculus</h6>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+        <img src="img/icon/meta.png" alt="Meta" class="tech-icon mb-2">
+        <h6>Meta</h6>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Milestones Section Start -->
+  <section id="milestones" class="py-5" >
+
+  <div class="container">
+        <div class="wow fadeInUp mb-5" data-wow-delay="0.1s">
+      <p><span class="text-primary me-2">#</span>Milestones</p>
+      <h1 class="display-5 mb-4">Timelines in brief</h1>
+      
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Project Proposal</h3>
+          <span class="date">August 2024</span>
+          <p>A Project Proposal is presented to potential sponsors or clients to receive funding or get your project approved.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Progress Presentation I</h3>
+          <span class="date">December 2024</span>
+          <p>Progress Presentation I reviews the 50% completion status of the project, revealing any gaps or inconsistencies in the design/requirements.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Research Paper</h3>
+          <span class="date">March 2025</span>
+          <p>Describes contributions to existing knowledge, giving due recognition to all referenced work in making new knowledge.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Progress Presentation II</h3>
+          <span class="date">March 2025</span>
+          <p>Progress Presentation II reviews the 90% completion status demonstration of the project.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Website Assessment</h3>
+          <span class="date">May 2025</span>
+          <p>The Website helps to promote our research project and reveals all details related to the project.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Logbook</h3>
+          <span class="date">Ongoing</span>
+          <p>Status of the project is validated through the Logbook.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Final Thesis Document</h3>
+          <span class="date">May 2025</span>
+          <p>The Final Report evaluates the project completed over the year and includes both individual and group reports.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Final Presentation & Viva</h3>
+          <span class="date">May 2025</span>
+          <p>Viva is held individually to assess each member’s contribution to the project.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Milestones Section End -->
+
+
+    
+
+
+
+
+
+<section id="downloads" class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p><span class="text-primary me-2">#</span>Downloads</p>
+      <h1 class="display-5"> Project Resources</h1>
+    </div>
+
+    <!-- Documents Section -->
+    <div class="mb-5">
+      <h3 class="mb-4 text-primary">📄 Documents</h3>
+      <div class="row g-4">
+        <!-- Document Card -->
+        
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="file-card shadow-sm p-4 rounded bg-light">
+            <div class="file-icon mb-3">
+           <i class="fas fa-file-pdf pdf-icon"></i>
+          </div>
+            <h6 class="fw-bold mb-1">Topic Assessment Form</h6>
+            <p class="text-muted mb-1">Submitted: <strong>June 25, 2025</strong></p>
+            <p class="text-muted mb-3">Owner: <span class="badge bg-primary text-white">Group</span></p>
+            <a href="pdf/Topic Assessment Form.pdf" download class="btn btn-outline-primary btn-sm">
+              <i class="fas fa-download me-1"></i> Download
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="file-card shadow-sm p-4 rounded bg-light">
+                        <div class="file-icon mb-3">
+           <i class="fas fa-file-pdf pdf-icon"></i>
+          </div>
+            <h6 class="fw-bold mb-1">Project Proposal - IT21141024</h6>
+            <p class="text-muted mb-1">Submitted: <strong>August 24, 2024</strong></p>
+            <p class="text-muted mb-3">Owner: <span class="badge bg-secondary text-white">Individual</span></p>
+            <a href="pdf/Project Proposal - IT21141024.pdf" download class="btn btn-outline-primary btn-sm">
+              <i class="fas fa-download me-1"></i> Download
+            </a>
+          </div>
+        </div>
+
+
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="file-card shadow-sm p-4 rounded bg-light">
+                        <div class="file-icon mb-3">
+           <i class="fas fa-file-pdf pdf-icon"></i>
+          </div>
+            <h6 class="fw-bold mb-1">Project Proposal - IT21155598</h6>
+            <p class="text-muted mb-1">Submitted: <strong>August 24, 2024</strong></p>
+            <p class="text-muted mb-3">Owner: <span class="badge bg-secondary text-white">Individual</span></p>
+            <a href="pdf/Project Proposal - IT21155598.pdf" download class="btn btn-outline-primary btn-sm">
+              <i class="fas fa-download me-1"></i> Download
+            </a>
+          </div>
+        </div>
+
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="file-card shadow-sm p-4 rounded bg-light">
+                        <div class="file-icon mb-3">
+           <i class="fas fa-file-pdf pdf-icon"></i>
+          </div>
+            <h6 class="fw-bold mb-1">Project Proposal - IT21164712</h6>
+            <p class="text-muted mb-1">Submitted: <strong>August 24, 2024</strong></p>
+            <p class="text-muted mb-3">Owner: <span class="badge bg-secondary text-white">Individual</span></p>
+            <a href="pdf/Project Proposal - IT21164712.pdf" download class="btn btn-outline-primary btn-sm">
+              <i class="fas fa-download me-1"></i> Download
+            </a>
+          </div>
+        </div>
+
+           <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="file-card shadow-sm p-4 rounded bg-light">
+                        <div class="file-icon mb-3">
+           <i class="fas fa-file-pdf pdf-icon"></i>
+          </div>
+            <h6 class="fw-bold mb-1">Feasibility Study Report - IT21171024</h6>
+            <p class="text-muted mb-1">Submitted: <strong>January 31, 2025</strong></p>
+            <p class="text-muted mb-3">Owner: <span class="badge bg-secondary text-white">Individual</span></p>
+            <a href="pdf/Feasibility Study Report - IT21171024.pdf" download class="btn btn-outline-primary btn-sm">
+              <i class="fas fa-download me-1"></i> Download
+            </a>
+          </div>
+        </div>
+
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="file-card shadow-sm p-4 rounded bg-light">
+                        <div class="file-icon mb-3">
+           <i class="fas fa-file-pdf pdf-icon"></i>
+          </div>
+            <h6 class="fw-bold mb-1">Feasibility Study Report - IT21155598</h6>
+            <p class="text-muted mb-1">Submitted: <strong>January 31, 2025</strong></p>
+            <p class="text-muted mb-3">Owner: <span class="badge bg-secondary text-white">Individual</span></p>
+            <a href="pdf/Feasibility Study Report - IT21155598.pdf" download class="btn btn-outline-primary btn-sm">
+              <i class="fas fa-download me-1"></i> Download
+            </a>
+          </div>
+        </div>
+
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="file-card shadow-sm p-4 rounded bg-light">
+                        <div class="file-icon mb-3">
+           <i class="fas fa-file-pdf pdf-icon"></i>
+          </div>
+            <h6 class="fw-bold mb-1">Feasibility Study Report - IT21164712</h6>
+            <p class="text-muted mb-1">Submitted: <strong>January 31, 2025</strong></p>
+            <p class="text-muted mb-3">Owner: <span class="badge bg-secondary text-white">Individual</span></p>
+            <a href="pdf/Feasibility Study Report - IT21164712.pdf" download class="btn btn-outline-primary btn-sm">
+              <i class="fas fa-download me-1"></i> Download
+            </a>
+          </div>
+        </div>
+
+
+
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="file-card shadow-sm p-4 rounded bg-light">
+            <div class="file-icon mb-3">
+           <i class="fas fa-file-pdf pdf-icon"></i>
+          </div>
+            <h6 class="fw-bold mb-1">Research Paper</h6>
+            <p class="text-muted mb-1">Submitted: <strong>March 07, 2025</strong></p>
+            <p class="text-muted mb-3">Owner: <span class="badge bg-primary text-white">Group</span></p>
+            <a href="pdf/Research Paper.pdf" download class="btn btn-outline-primary btn-sm">
+              <i class="fas fa-download me-1"></i> Download
+            </a>
+          </div>
+        </div>
+
+
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="file-card shadow-sm p-4 rounded bg-light">
+            <div class="file-icon mb-3">
+           <i class="fas fa-file-pdf pdf-icon"></i>
+          </div>
+            <h6 class="fw-bold mb-1">Final Report</h6>
+            <p class="text-muted mb-1">Submitted: <strong>April 11, 2025</strong></p>
+            <p class="text-muted mb-3">Owner: <span class="badge bg-primary text-white">Group</span></p>
+            <a href="pdf/Final Report.pdf" download class="btn btn-outline-primary btn-sm">
+              <i class="fas fa-download me-1"></i> Download
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Presentations Section -->
+    <div>
+      <h3 class="mb-4 text-success">📽️ Presentations</h3>
+      <div class="row g-4">
+        <!-- Presentation Card -->
+         
+        <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="file-card shadow-sm p-4 rounded bg-light">
+              <div class="file-icon mb-3">
+    <i class="fas fa-file-powerpoint ppt-icon"></i>
+  </div>
+            <h6 class="fw-bold mb-1">Progress Presentation I</h6>
+            <p class="text-muted mb-1">Submitted: <strong>December 06, 2024</strong></p>
+            <p class="text-muted mb-3">Owner: <span class="badge bg-primary text-white">Group</span></p>
+            <a href="pdf/Progress Presentation I.pptx" download class="btn btn-outline-success btn-sm">
+              <i class="fas fa-download me-1"></i> Download
+            </a>
+          </div>
+        </div>
+
+
+
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="file-card shadow-sm p-4 rounded bg-light">
+              <div class="file-icon mb-3">
+    <i class="fas fa-file-powerpoint ppt-icon"></i>
+  </div>
+            <h6 class="fw-bold mb-1">Progress Presentation II</h6>
+            <p class="text-muted mb-1">Submitted: <strong>March 21, 2025</strong></p>
+            <p class="text-muted mb-3">Owner: <span class="badge bg-primary text-white">Group</span></p>
+            <a href="pdf/Progress Presentation II.pptx" download class="btn btn-outline-success btn-sm">
+              <i class="fas fa-download me-1"></i> Download
+            </a>
+          </div>
+        </div>
+
+
+          <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="file-card shadow-sm p-4 rounded bg-light">
+              <div class="file-icon mb-3">
+    <i class="fas fa-file-powerpoint ppt-icon"></i>
+  </div>
+            <h6 class="fw-bold mb-1">Final Presentation</h6>
+            <p class="text-muted mb-1">Submitted: <strong>May 29, 2025</strong></p>
+            <p class="text-muted mb-3">Owner: <span class="badge bg-primary text-white">Group</span></p>
+            <a href="" download class="btn btn-outline-success btn-sm">
+              <i class="fas fa-download me-1"></i> Download
+            </a>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+    
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">User Insights</h1>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>"As a zoologist, I was impressed by the anatomical accuracy of the 3D snake models and the thoughtful integration of behavior and habitat. SerpentSphere bridges the gap between theory and practice—an invaluable tool for both education and conservation awareness."</p>
+                        <h5 class="mb-1">Mr. Anand Vijaya Velauthem</h5>
+                        <span class="fst-italic">Zoologist - Department of Wildlife Conservation, Sri Lanka.
+</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>"I was genuinely impressed by how accurately SerpentSphere captures the morphology and behavior of venomous snakes. It's a rare tool that combines education, safety, and realism perfect for introducing complex concepts without risking real-life encounters."</p>
+                        <h5 class="mb-1">Ms. Iresha Harischandra</h5>
+                        <span class="fst-italic">Zoologist - Department of Wildlife Conservation, Sri Lanka.</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-3.jpg" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>"SerpentSphere gave me a realistic, hands-on understanding of snakebite first aid. I’ve never felt this confident applying what I’ve learned outside of textbooks. The venom visualization was especially eye-opening."</p>
+                        <h5 class="mb-1">Ms. Sathsarani Jayalath</h5>
+                        <span class="fst-italic">Medical Student - University of Colombo.
+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+
+
+
+
+<section id="aboutus" class="py-5" >
+
+
+
+
+      <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+      <p><span class="text-primary me-2">#</span>About Us</p>
+      <h1 class="display-5">Meet Our Team !</h1>
+    </div>
+
+<div class="container py-5">
+  <div class="team-cards wow fadeInUp" data-wow-delay="0.1s">
+
+
+    
+<div class="unique-card">
+  <span class="role-badge">Supervisor</span>
+  <img src="img/is.png" alt="Mr. Aruna Ishara Gamage" class="profile-image">
+  <div class="card-body">
+    <h5 class="card-title">Mr. Aruna Ishara Gamage</h5>
+    
+    <div class="info-text">Sri Lanka Institute of Information Technology</div>
+    <div class="info-text"><strong>Faculty of Computing</strong> </div>
+  </div>
+  <div class="card-footer">
+    <a href="https://www.linkedin.com/in/aruna-ishara-gamage-145a91138/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+    <a href="mailto:ishara.g@sliit.lk"><i class="fas fa-envelope"></i>E-Mail</a>
+  </div>
+</div>
+
+<div class="unique-card">
+  <span class="role-badge">Co-Supervisor</span>
+  <img src="img/di.png" alt="Mr. Didula Chamara" class="profile-image">
+  <div class="card-body">
+    <h5 class="card-title">Mr. Didula Chamara</h5>
+    
+    <div class="info-text">Sri Lanka Institute of Information Technology</div>
+    <div class="info-text"><strong>Faculty of Computing</strong> </div>
+  </div>
+  <div class="card-footer">
+    <a href="https://www.sliit.lk/faculty-of-computing/staff/didula.c/#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+    <a href="mailto:didula.c@sliit.lk"><i class="fas fa-envelope"></i>E-Mail</a>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+
+<div class="container py-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="team-cards">
+
+   
+    
+<div class="unique-card">
+  <span class="role-badge">Group Leader</span>
+  <img src="img/d.jpg" alt="dula" class="profile-image">
+  <div class="card-body">
+    <h5 class="card-title">Balasuriya B L D C </h5>
+    <div class="info-text"><strong>IT21171024</strong></div>
+    <div class="info-text">Sri Lanka Institute of Information Technology</div>
+    <div class="info-text"><strong>Faculty of Computing</strong> </div>
+  </div>
+  <div class="card-footer">
+    <a href="https://www.linkedin.com/in/dulaksha-chamodi-1a051521b/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+    <a href="mailto:it21171024@my.sliit.lk"><i class="fas fa-envelope"></i>E-Mail</a>
+  </div>
+</div>
+
+<div class="unique-card">
+  <span class="role-badge">Group Member</span> 
+  <img src="img/buddi.jpg" alt="buddhi" class="profile-image">
+  <div class="card-body">
+    <h5 class="card-title">Dhananjaya W A B P </h5>
+    <div class="info-text"><strong>IT21164712</strong></div>
+    <div class="info-text">Sri Lanka Institute of Information Technology</div>
+    <div class="info-text"><strong>Faculty of Computing</strong> </div>
+  </div>
+  <div class="card-footer">
+    <a href="https://www.linkedin.com/in/buddhi-praveen-357027218/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+    <a href="mailto:it21164712@my.sliit.lk"><i class="fas fa-envelope"></i>E-Mail</a>
+  </div>
+</div>
+
+<div class="unique-card">
+  <span class="role-badge">Group Member</span>
+  <img src="img/randima.jpg" alt="Randima" class="profile-image">
+  <div class="card-body">
+    <h5 class="card-title">Dilshan K A R</h5>
+    <div class="info-text"><strong>IT21155598s</strong></div>
+    <div class="info-text">Sri Lanka Institute of Information Technology</div>
+    <div class="info-text"><strong>Faculty of Computing</strong></div>
+  </div>
+  <div class="card-footer">
+    <a href="https://www.linkedin.com/in/randimadilshan/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+    <a href="mailto:it21155598@my.sliit.lk"><i class="fas fa-envelope"></i>E-Mail</a>
+  </div>
+</div>
+
+
+
+
+  </div>
+</div>
+
+</section>
+
+
+
+
+    
+    <!-- Contact Start -->
+     <section id="contact" class="section">
+    <div class="container-xxl py-5">
+        <div class="container">
+            
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p><span class="text-primary me-2">#</span>Contact Us</p>
+                    <h1 class="display-5 mb-4">Have Any Query? Please Contact Us!</h1>
+                    
+                    <form action="https://formspree.io/f/xgvkgllz" method="POST">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="text" class="form-control bg-light border-0" id="name" name="name" placeholder="Your Name">
+        <label for="name">Your Name</label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-floating">
+        <input type="email" class="form-control bg-light border-0" id="email" name="email" placeholder="Your Email">
+        <label for="email">Your Email</label>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-floating">
+        <input type="text" class="form-control bg-light border-0" id="subject" name="subject" placeholder="Subject">
+        <label for="subject">Subject</label>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-floating">
+        <textarea class="form-control bg-light border-0" placeholder="Leave a message here" id="message" name="message" style="height: 100px"></textarea>
+        <label for="message">Message</label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+    </div>
+  </div>
+</form>
+
+
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100" style="min-height: 400px;">
+                        <iframe class="rounded w-100 h-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.19962792986!2d79.97229942851828!3d6.914677499566006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae256db1a6771c5%3A0x2c63e344ab9a7536!2sSri%20Lanka%20Institute%20of%20Information%20Technology!5e0!3m2!1sen!2slk!4v1748358280031!5m2!1sen!2slk"
+                        frameborder="0" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Contact End -->
+  
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Reach Us</h5>
+                    
+                    
+                    <p class="mb-2">
+  <i class="fa fa-envelope me-3"></i>
+  <a href="mailto:serpentsphereinfo@gmail.com" style="text-decoration: none; color: inherit;">
+    serpentsphereinfo@gmail.com
+  </a>
+</p>
+                    <!-- <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Project Scope</h5>
+                    <a class="btn btn-link" href="#literature">Literature Survey</a>
+                    <a class="btn btn-link" href="#gap">Research Gap</a>
+                    <a class="btn btn-link" href="#research">Research Problem and Solutions</a>
+                    <a class="btn btn-link" href="#objectives">Research Objectives</a>
+                    <a class="btn btn-link" href="#methodology">Methodology</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">Home</a>
+                    <a class="btn btn-link" href="#milestones">Milestones</a>
+                    <a class="btn btn-link" href="#downloads">downloads</a>
+                    <a class="btn btn-link" href="#aboutus">About Us</a>
+                    <a class="btn btn-link" href="#contact">Contact Us</a>
+                    
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+
+                  
+                    <h5 class="text-light mb-4">Support Our Work</h5>
+                    <p>If you like what we’re building, fuel our creativity with a coffee ☕</p>
+
+           <div class="bmc-wrapper">
+  <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+    data-name="bmc-button"
+    data-slug="JacklupSolutions"
+    data-color="#ffffff"
+    data-emoji="☕"
+    data-font="Cookie"
+    data-text="Buy us a coffee"
+    data-outline-color="#000000"
+    data-font-color="#000000"
+    data-coffee-color="#FFDD00">
+  </script>
+</div>
+                    
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index.html">SerpentSphere </a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        
+                        Designed By <a class="border-bottom" href="https://jacklup.com">Team SerpentSphere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
